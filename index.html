@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced HTML Form</title>
+  <style>
+    .error { color: red; font-size: 0.9em; }
+    .highlight { border: 2px solid red; background-color: #fff3f3; }
+    input:focus { border: 2px solid blue; background-color: #e3f2fd; }
+    pre { background: #f4f4f4; padding: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>Student Registration Form</h2>
+  <form id="registrationForm">
+    <label>Name:</label><br>
+    <input type="text" id="name"><br>
+    <span class="error" id="nameError"></span><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br>
+    <span class="error" id="emailError"></span><br>
+
+    <label>DOB:</label><br>
+    <input type="date" id="dob"><br>
+    <span class="error" id="dobError"></span><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female<br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="text" id="phone"><br>
+    <span class="error" id="phoneError"></span><br>
+
+    <label>Subjects:</label><br>
+    <input type="checkbox" name="subjects" value="Math"> Math
+    <input type="checkbox" name="subjects" value="Science"> Science
+    <input type="checkbox" name="subjects" value="English"> English<br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <h3>JSON Output:</h3>
+  <pre id="jsonOutput"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
